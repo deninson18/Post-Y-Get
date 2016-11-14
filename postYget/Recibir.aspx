@@ -1,0 +1,28 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Recibir.aspx.cs" Inherits="postYget.Get" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Label ID="RecibirNombre" runat="server"></asp:Label>
+        </div>
+        <div>
+            <asp:Label ID="RecibirApellido" runat="server"></asp:Label>
+        </div>
+        <div>
+            <asp:Label ID="RecibirDireccion" runat="server"></asp:Label>
+        </div>
+        <div>
+            <asp:Label ID="RecibirTelefono" runat="server"></asp:Label>
+        </div>
+        <div>
+            <asp:Label ID="RecibirCedula" runat="server"></asp:Label>
+        </div>
+    </form>
+</body>
+</html>
