@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Enviar.aspx.cs" Inherits="postYget.Default" %>
+﻿<%@ Page EnableViewState="false" Language="C#" AutoEventWireup="true" CodeBehind="Enviar.aspx.cs" Inherits="postYget.Default" %>
 
 <!DOCTYPE html>
 
@@ -16,9 +16,11 @@
                 <div class="panel-heading">INFORMACION DE USUARIO </div>        
              <div class="panel-body">
             <div>
-            Nombre:<asp:TextBox ID="nombreTextBox" runat="server" Height="21px" Width="200px"></asp:TextBox>
-           <asp:Button Class="btn btn-primary" ID="enviarButton" runat="server" Text="ENVIAR" />
+                <asp:Label ID="Label5" runat="server" Text="Nombre:"></asp:Label>
+            <asp:TextBox ID="nombreTextBox" runat="server" Height="21px" Width="200px"></asp:TextBox>
+           <asp:Button Class="btn btn-primary" ID="enviarButton" runat="server" Text="ENVIAR"  />               
                 </div>
+                  
                  <div>
                      <asp:Label ID="Label1" runat="server" Text="Apellido:"></asp:Label>
                      <asp:TextBox ID="apellidoTextBox" runat="server"  Height="21px" Width="200px"></asp:TextBox>

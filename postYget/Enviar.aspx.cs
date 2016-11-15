@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Collections.Specialized;
 
 namespace postYget
 {
@@ -11,15 +12,15 @@ namespace postYget
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!IsPostBack)
+            {
+                nombreTextBox.Text = Request.QueryString["nombreTextBox"];
+              
+            
+            }
+            
         }
 
-        //protected void enviarButton_Click(object sender, EventArgs e)
-        //{
-        //    //use get method
-        //   // Response.Redirect("recibir.aspx?info=" + mensajeTextBox.Text);
-        //    //Response.Redirect("recibir.aspx?info=" + apellidoTextBox.Text);
-
-        //}
+       
     }
 }
